@@ -23,28 +23,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .face::before {
   content: "";
   position: absolute;
-  top: 180px;
+  top: 200px;
   width: 150px;
-  height: 70px;
+  height: 65px;
   background: rgb(243, 181, 11);
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  transition: .5s;
+  transition: 0.5s;
+  border: 1px solid white;
 }
 
 .face:hover::before {
-  top: 210px;
+  top: 220px;
   width: 150px;
   height: 20px;
   background: rgb(243, 181, 11);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  transition: .5s;
+  transition: 0.5s;
+  border: 0;
 }
 
 .eyes{
